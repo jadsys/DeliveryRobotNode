@@ -56,6 +56,7 @@ $ roscore
 ```
 ![image](https://github.com/jadsys/DeliveryRobotNode/wiki/images/12.png)
  
+ 
 【ターミナル②】<br>
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
@@ -127,6 +128,7 @@ $ rosrun delivery_robot edge_node_beta turtlebot_01 turtlebot 113  // navi
 ![image](https://github.com/jadsys/DeliveryRobotNode/wiki/images/19.png)
  
 ロボットがナビゲーションを終了すると、以下のようにカウンタを更新するメッセージのみ表示されるようになるので、「Ctrl+C」を押下し、コマンドを終了します。再度ナビゲーションを行う場合は、別途navi用のコマンドを入力して下さい。
+ 
 ![image](https://github.com/jadsys/DeliveryRobotNode/wiki/images/20.png)
 
 
