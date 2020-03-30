@@ -213,12 +213,15 @@ $ cd ~/catkin_ws && catkin_make
 
 ・WayPointの座標調査は、Navigation_Stackを起動した状態で行います。起動したrvizにて以下の操作を行います。<br>
 ①rviz画面上部の「2D Pose Estimate」ボタンを押下する。<br>
+
 ![image](https://github.com/jadsys/DeliveryRobotNode/wiki/images/08.png)
 
 ②地図上で、座標を知りたいポイント上で左クリック（押したままを維持）し、緑色の矢印が出力されたら、矢印を任意の方角に向け、左クリックを離す。<br>
+
 ![image](https://github.com/jadsys/DeliveryRobotNode/wiki/images/09.png)
- 
+
 ③Rvizを起動したターミナル上に、Informationとして「Setting Pose：[x] [y] [θ]」が出力されるため、こちらの座標をメモする。<br>
+
 ![image](https://github.com/jadsys/DeliveryRobotNode/wiki/images/10.png)
 
 #### （８）移動指示用ノードプログラム修正
