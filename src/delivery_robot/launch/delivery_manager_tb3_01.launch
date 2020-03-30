@@ -1,0 +1,24 @@
+<launch>
+  <arg name="ENTITY_ID" default="turtlebot_01" />
+  <arg name="ENTITY_TYPE" default="turtlebot" />
+  <arg name="NAVI_NODE_MODE" default="false" />
+  <node pkg="delivery_robot" type="delivery_robot" name="delivery_robot_node_$(arg ENTITY_ID)" output="screen" >
+    <param name="entity_id" value="$(arg ENTITY_ID)" />
+    <param name="entity_type" value="$(arg ENTITY_TYPE)" />
+    <param name="navi_node" value="$(arg NAVI_NODE_MODE)" />
+    <param name="velocity_topic" value="cmd_vel" />
+    <remap to="/robot_bridge/$(arg ENTITY_ID)/cmd"    from="/cmd" />
+    <remap to="/robot_bridge/$(arg ENTITY_ID)/cmdexe" from="/cmdexe" />
+    <remap to="/robot_bridge/$(arg ENTITY_ID)/state"  from="/state" />
+    <remap to="/robot_bridge/$(arg ENTITY_ID)/emg"    from="/emg" />
+    <remap to="/robot_bridge/$(arg ENTITY_ID)/emgexe" from="/emgexe" />
+    <rosparam file="$(find delivery_robot)/param/delivery_robot_node_tb3_01.yaml" command="load" />
+  </node>
+
+  <group if="$(arg NAVI_NODE_MODE)">
+    <node pkg="delivery_robot" type="delivery_navi" name="delivery_navi_node" ns="$(arg ENTITY_ID)" >
+      <rosparam file="$(find delivery_robot)/param/delivery_navi_node_tb3_01.yaml" command="load" />
+    </node>
+  </group>
+
+</launch>

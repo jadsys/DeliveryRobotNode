@@ -1,0 +1,11 @@
+<launch>
+  <arg name="multi_robot_name" default=""/>
+
+  <group ns="turtlebot_01">
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_core.launch">
+    <arg name="multi_robot_name" value="$(arg multi_robot_name)"/>
+  </include>
+
+  <node pkg="turtlebot3_bringup" type="turtlebot3_diagnostics" name="turtlebot3_diagnostics" output="screen"/>
+  </group>
+</launch>

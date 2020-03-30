@@ -1,0 +1,2 @@
+float64 voltage
+r_current_optional current_optional

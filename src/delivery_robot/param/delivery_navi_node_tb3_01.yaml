@@ -1,0 +1,21 @@
+# 壁判定 幅(m)
+wall_judgment_width: 0.30
+# 壁判定 正面(m)
+wall_judgment_distance: 0.60
+
+# 走行速度(遠い)   (m/s)
+linear_speed_long: 0.20
+# 走行速度(近い)   (m/s)
+linear_speed_short: 0.10
+# 走行速度(ゴール付近) (m/s)
+linear_speed_near: 0.05
+
+# 走行速度切り替え距離(近い)  (m)
+distance_short: 0.50
+# 走行速度切り替え距離(ゴール付近)  (m)
+distance_near: 0.30
+# ゴール判定距離  (m)
+distance_goal: 0.05
+
+# 進行方向 許容角度 (rad)
+allowable_angle: 0.05

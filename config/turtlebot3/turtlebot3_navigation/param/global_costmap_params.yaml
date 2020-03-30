@@ -1,0 +1,10 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: turtlebot_01_base_footprint
+
+  update_frequency: 10.0
+  publish_frequency: 10.0
+  transform_tolerance: 2.0
+
+  static_map: true
+ 

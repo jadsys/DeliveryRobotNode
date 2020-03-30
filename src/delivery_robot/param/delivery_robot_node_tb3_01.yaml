@@ -1,0 +1,15 @@
+# 初期位置
+initial_pose: [0.0, 0.0, 0.0]
+
+# キャリブレーション 回転速度
+initial_turn_speed: 0.5
+# wayポイント停止時間
+wp_sleep_time: 5
+# goalポイント許容範囲
+goal_tolerance_range: 0.05
+# ゴール地点到達時のタイムアウトタイマー開始半径
+goal_allowable_range: 0.10
+# ゴール地点到達時のタイムアウトタイマー
+goal_allowable_time: 3
+# ゴール地点到達時のangle許容角度(rad)
+goal_allowable_angle: 0.035
